@@ -258,21 +258,38 @@ nav .right a:hover {
 }
 
 /* book now section end  */
+/* reach section start  */
+.reach-about{
+    margin-bottom: 100px;
+}
+.reach-about h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.reach-about div {
+    display: flex;
+    justify-content: center;
+}
+/* end -----  */
 
 /* contact us start  */
 #contact {
     background-color: rgba(31, 44, 108);
-    padding: 5rem 0rem;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
 .foot-sec {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 .foot-sec .foot-item {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0rem;
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
 .foot-item h2 {
@@ -341,7 +358,7 @@ gap: 1rem;
 color: var(--textcolor);
 font-size: 1.2rem;
 }
-footer a > i{
+footer .a > i{
     font-size: 1.2rem;
     background-color: skyblue;
     border: none;
@@ -349,8 +366,8 @@ footer a > i{
     padding: 1rem 1rem;
     color: white;
     position:fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 130px;
+    right: 10px;
 
 }
 footer .link-foot{
@@ -366,8 +383,8 @@ footer .links{
     align-items: center;
 }
 .links img{
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
 
 }
 .links .right-foot{
@@ -377,7 +394,13 @@ footer .links{
 }
 .links .right-foot i{
     color:var(--textcolor);
+    background-color: skyblue;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    padding: 0.8rem 0.8rem;
 }
+
 
 /* contact us end  */
 
@@ -409,6 +432,14 @@ footer .links{
         height: 90vh;
 
     }
+    .reach-about{
+        margin-bottom: 60px;
+    }
+    .reach-about h2{
+        text-align: left;
+
+    }
+  
 
 }
 
@@ -443,6 +474,9 @@ footer .links{
 
     #book h2 {
         text-align: left;
+    }
+    .links img{
+        margin-bottom: 30px;
     }
 
 
