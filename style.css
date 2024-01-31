@@ -147,14 +147,239 @@ nav .right a:hover {
 /* home end  */
 
 /* service section start  */
+
 #service h2 {
     text-align: center;
+    padding: 0px 1.3rem;
+    font-size: 2.5rem;
+
 
 }
 
+#service .service-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
+.service-sec .service-item {
+    background-color: rgb(240, 255, 255, 0.8);
+    padding: 2rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    flex-basis: 320px;
+    flex-grow: 1;
+    transition: all 0.3s;
+}
+
+.service-sec .service-item:hover {
+    transform: scale(1.01);
+}
+
+.service-item img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+}
+
+.service-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+
+}
+
+.service-item p {
+    margin-bottom: 2.2rem;
+}
 
 /* service end  */
+
+/* book now section start  */
+#book {
+    margin-top: 100px;
+
+
+}
+
+#book h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0rem 1.3rem;
+}
+
+.book-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.book-section .book-item {
+    padding: 2rem 1rem;
+    background-color: rgb(240, 255, 255, 0.8);
+    flex-basis: 320px;
+    flex-grow: 1;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.book-section .book-item video {
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 84, 90, 0.8);
+}
+
+.book-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.book-item .call {
+    margin-bottom: 1rem;
+}
+
+.book-item .p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.book-item i {
+    font-size: 1.2rem;
+    color: var(--primarycolor);
+    padding-right: 0.7rem;
+}
+
+.book-item .m-top {
+    margin-top: 2.3rem;
+}
+
+/* book now section end  */
+
+/* contact us start  */
+#contact {
+    background-color: rgba(31, 44, 108);
+    padding: 5rem 0rem;
+}
+
+.foot-sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foot-sec .foot-item {
+    padding: 0.5rem 1rem;
+}
+
+.foot-item h2 {
+    font-size: 2rem;
+    color: var(--textcolor);
+    padding-bottom: 0.5rem;
+}
+
+.foot-item img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.foot-item .line {
+    width: 100%;
+    height: 8px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.foot-item .line div {
+    width: 2%;
+    height: 100%;
+    background-color: var(--textcolor);
+    position: absolute;
+    animation: dot 3s infinite alternate-reverse;
+
+}
+
+@keyframes dot {
+
+    from {
+        left: 0;
+        top: 0;
+    }
+
+    to {
+        left: 98%;
+        top: 0;
+    }
+
+}
+
+.call-foot {
+    margin-bottom: 1rem;
+    color: var(--textcolor);
+    font-size: 1.1rem;
+}
+
+.call-foot i {
+    color: skyblue;
+    font-size: 1.4rem;
+}
+
+.foot-item .ancer{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+
+}
+.ancer a{
+color: var(--textcolor);
+font-size: 1.2rem;
+}
+footer a > i{
+    font-size: 1.2rem;
+    background-color: skyblue;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    color: white;
+    position:fixed;
+    bottom: 50px;
+    right: 50px;
+
+}
+footer .link-foot{
+    background-color: #557fa1;
+    padding: 1.3rem 0rem;
+    margin-top: 100px;
+
+}
+footer .links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.links img{
+    height: 60px;
+    width: 60px;
+
+}
+.links .right-foot{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+.links .right-foot i{
+    color:var(--textcolor);
+}
+
+/* contact us end  */
 
 
 /* tab styling start  */
@@ -192,7 +417,7 @@ nav .right a:hover {
 @media screen and (max-width:576px) {
     .container {
         max-width: 100%;
-        padding: 0px 1.3rem;
+        padding: 0px 1.2rem;
 
     }
 
@@ -203,8 +428,21 @@ nav .right a:hover {
     .button-sec {
         justify-content: flex-start;
     }
-    .btn{
+
+    .btn {
         width: 100%;
+    }
+
+    #service h2 {
+        text-align: left;
+    }
+
+    #book {
+        margin-top: 60px;
+    }
+
+    #book h2 {
+        text-align: left;
     }
 
 
